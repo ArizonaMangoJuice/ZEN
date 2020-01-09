@@ -50,9 +50,9 @@ function GalleryCard (props){
                         <ModalBody>
                             <p>{props.imageInfo.name}</p>
                             <Image
-                                height='512px'
+                                // height='512px'
                                 max-width='512px'
-                                src={require('../../assets/jason-briscoe-UV81E0oXXWQ-unsplash.jpg')}
+                                src={require(`../../assets/${props.imageSource}`)}
                             />
                         </ModalBody>
 
@@ -67,7 +67,7 @@ function GalleryCard (props){
                 <Image
                     height='250px'
                     width='100%'
-                    src={require('../../assets/jason-briscoe-UV81E0oXXWQ-unsplash.jpg')}
+                    src={require(`../../assets/${props.imageSource}`)}
                 />
 
                 <Box

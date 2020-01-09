@@ -32,16 +32,16 @@ import Modal from '../Modal/Modal';
                     flexWrap='wrap' 
                     justifyContent='space-between'
                 >
-                    <GalleryCard />
-                    <GalleryCard />
-                    <GalleryCard />
-                    <GalleryCard />
-                    <GalleryCard />
-                    <GalleryCard />
-                    <GalleryCard />
-                    <GalleryCard />
-                    <GalleryCard />
-                    <Modal />
+                    <GalleryCard imageSource={'jason-briscoe-AQl-J19ocWE-unsplash.jpg'}/>
+                    <GalleryCard imageSource={'jason-briscoe-UV81E0oXXWQ-unsplash.jpg'}/>
+                    <GalleryCard imageSource={'joshua-ness-Vo52cKzOxMY-unsplash.jpg'}/>
+                    <GalleryCard imageSource={'michael-browning-t6H2vqVPq7E-unsplash.jpg'}/>
+                    <GalleryCard imageSource={'joshua-ness-Vo52cKzOxMY-unsplash.jpg'}/>
+                    <GalleryCard imageSource={'jason-briscoe-UV81E0oXXWQ-unsplash.jpg'}/>
+                    <GalleryCard imageSource={'jason-briscoe-UV81E0oXXWQ-unsplash.jpg'}/>
+                    <GalleryCard imageSource={'jason-briscoe-UV81E0oXXWQ-unsplash.jpg'}/>
+                    <GalleryCard imageSource={'jason-briscoe-UV81E0oXXWQ-unsplash.jpg'}/>
+                    {/* <Modal /> */}
                 </Flex>
             </>
         )
