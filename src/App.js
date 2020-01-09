@@ -13,7 +13,7 @@ import {toggleClick} from './actions/actions'
 const mapStateToProps = state => {
   return {
     gallery: state.Gallery.image,
-    image: state.Gallery.clicked
+    isImageClicked: state.Gallery.clicked
   }
 }
 
@@ -25,7 +25,7 @@ function App(props) {
         <div className='max-width'>
         <Card imageName='joshua-ness-Vo52cKzOxMY-unsplash.jpg'/>
         <Gallery />
-        <p>{props.image} hello</p>
+        <p>{props.isImageClicked} hello</p>
         <Button 
           onClick={() => props.dispatch(toggleClick())}
         >press this Button</Button>

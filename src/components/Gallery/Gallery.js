@@ -1,8 +1,11 @@
 import React from 'react';
 import { Button, Box, Flex, Image, Heading, Divider} from '@chakra-ui/core';
 import GalleryCard from '../galleryCard/GalleryCard';
+import Modal from '../Modal/Modal';
 
-export default class Gallery extends React.Component{
+
+
+ export default class Gallery extends React.Component{
     constructor(props){
         super(props)
         let state = {}
@@ -38,9 +41,10 @@ export default class Gallery extends React.Component{
                     <GalleryCard />
                     <GalleryCard />
                     <GalleryCard />
-
+                    <Modal />
                 </Flex>
             </>
         )
     }
 }
+

@@ -1,5 +1,5 @@
 import { bindActionCreators } from "redux"
-import {TOGGLE_CLICK} from '../actions/actions'
+import {TOGGLE_CLICK, IMAGE_NAME} from '../actions/actions'
 
 let initialState = {
     clicked: false,
@@ -12,6 +12,15 @@ const gallery = (state = initialState, action) => {
             return {
                 ...state,
                 clicked: !state.clicked
+            }
+        case IMAGE_NAME:
+            return {
+                ...state,
+                image: {
+                    ...state.image,
+                    name: action.name,
+                    title: Math.random()
+                }
             }
         default: 
             return state

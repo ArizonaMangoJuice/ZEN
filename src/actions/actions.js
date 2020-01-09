@@ -1,5 +1,5 @@
 // action types
-export const ADD_TODO = 'ADD_TODO'
+export const IMAGE_NAME = 'ADD_TODO'
 export const TOGGLE_TODO = 'TOGGLE_TODO'
 export const SET_VISISBILITY_FILTER = 'SET_VISIBILITY_FILTER'
 export const TOGGLE_CLICK = 'TOGGLE_CLICK'
@@ -17,10 +17,10 @@ export const VisibilityFilters = {
 
 // action creators the function that gets sent to the reducer
 
-export function addTodo(text){
+export function imageName(name){
     return {
-        type: ADD_TODO,
-        text
+        type: IMAGE_NAME,
+        name
     }
 }
 
