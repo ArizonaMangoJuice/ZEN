@@ -30,6 +30,9 @@ function App(props) {
           onClick={() => props.dispatch(toggleClick())}
         >press this Button</Button>
         </div>
+        {/* <video autoPlay loop muted>
+          <source src={require('./assets/LandingVideo.mp4')} type='video/mp4' />
+        </video> */}
         {/* <Box>Tomato</Box> */}
         {/* <HookForm /> */}
     </div>
