@@ -10,6 +10,7 @@ export default class GalleryCard extends React.Component{
                 height='33%'
                 width='31%'
                 marginTop='4%'
+                as='button'
             >
                 <Image
                     height='250px'
