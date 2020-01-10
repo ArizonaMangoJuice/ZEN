@@ -7,6 +7,12 @@ import Header from './components/Header/Header';
 import Card from './components/Card/Card';
 import Gallery from './components/Gallery/Gallery';
 import { connect } from 'react-redux'
+import {
+  Switch,
+  Route, 
+  Link
+} from 'react-router-dom'
+
 
 import {toggleClick} from './actions/actions'
 
@@ -23,14 +29,19 @@ function App(props) {
     <div className="App">
         <Header />
         <div className='max-width'>
-        <Card imageName='joshua-ness-Vo52cKzOxMY-unsplash.jpg'/>
-        <Gallery />
-        <p>{props.isImageClicked} hello</p>
-        <Button 
+        {/* <Card imageName='joshua-ness-Vo52cKzOxMY-unsplash.jpg'/> */}
+        <Route exact path='/gallery' component={Gallery}/>
+        <Route exact path='/' component={Card}/>
+
+
+
+        {/* <Gallery /> */}
+        {/* <p>{props.isImageClicked} hello</p> */}
+        {/* <Button 
           onClick={() => props.dispatch(toggleClick())}
-        >press this Button</Button>
+        >press this Button</Button> */}
         </div>
-        {/* <video autoPlay loop muted>
+        {/* <video className='video-background' autoPlay loop muted>
           <source src={require('./assets/LandingVideo.mp4')} type='video/mp4' />
         </video> */}
         {/* <Box>Tomato</Box> */}

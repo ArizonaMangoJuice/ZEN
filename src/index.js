@@ -7,6 +7,9 @@ import { ThemeProvider, CSSReset  } from "@chakra-ui/core"
 import { Provider } from 'react-redux'
 import { theme } from '@chakra-ui/core'
 import store from './store'
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom'
 
 const customTheme = {
   ...theme,
@@ -24,7 +27,9 @@ ReactDOM.render(
   <Provider store={store}>
     <ThemeProvider theme={customTheme}>
       <CSSReset/>
-        <App />
+        <Router>
+          <App />
+        </Router>
     </ThemeProvider>
   </Provider>
   , document.getElementById('root'));

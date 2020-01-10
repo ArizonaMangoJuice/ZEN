@@ -13,7 +13,14 @@ import Modal from '../Modal/Modal';
 
     render(){
         return (
-            <>
+            <Box
+                bg='white'
+                paddingLeft='15px'
+                paddingRight='15px'
+                paddingBottom='15px'
+
+
+            >
                 <Box
                     marginTop='4%'
                 >
@@ -43,7 +50,7 @@ import Modal from '../Modal/Modal';
                     <GalleryCard imageSource={'jason-briscoe-UV81E0oXXWQ-unsplash.jpg'}/>
                     {/* <Modal /> */}
                 </Flex>
-            </>
+            </Box>
         )
     }
 }

@@ -10,7 +10,14 @@ export default class Card extends React.Component{
     render(){
         console.log(this.props)
         return (
-            <Flex position='relative'  height='350px' maxWidth='900px' margin='auto' marginTop='50px'>
+            <Flex 
+                position='relative'  
+                height='350px' 
+                maxWidth='900px' 
+                margin='auto' 
+                marginTop='50px'
+                bg='white'    
+            >
                 <Button
                     position='absolute'
                     top='150px'
@@ -20,7 +27,7 @@ export default class Card extends React.Component{
                     paddingRight='0.8rem'
                 >
                 </Button>
-                <LeftCard imageName={this.props.imageName} />
+                <LeftCard imageName={'joshua-ness-Vo52cKzOxMY-unsplash.jpg'} />
                 <RightCard />
                 <Button
                     position='absolute'

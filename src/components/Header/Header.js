@@ -9,6 +9,7 @@ export default class Header extends React.Component{
                 borderBottom='1px solid #E2E8F0'  
                 justifyContent='space-around'  
                 alignItems='center'
+                bg='white'
             >
                 <Image 
                     src={require('../../assets/isa-zen-small.png')}
