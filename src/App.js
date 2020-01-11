@@ -32,6 +32,7 @@ function App(props) {
         {/* <Card imageName='joshua-ness-Vo52cKzOxMY-unsplash.jpg'/> */}
         <Route exact path='/gallery' component={Gallery}/>
         <Route exact path='/' component={Card}/>
+        {/* <Route exact path='/schedule' component={}/>  schedule will go herew*/}
 
 
 

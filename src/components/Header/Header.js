@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Box, Flex, Image} from '@chakra-ui/core';
-
+import { Link  } from 'react-router-dom';
 
 export default class Header extends React.Component{
     render(){
@@ -17,7 +17,7 @@ export default class Header extends React.Component{
                 />
                 <nav>
                     <Button borderColor='#000' variant='ghost' marginRight='10px'>
-                        Gallery
+                        <Link to='/gallery'>Gallery</Link>
                     </Button>
                     <Button borderColor='#000' variant='ghost' marginRight='10px'>
                         Contact
