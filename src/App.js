@@ -6,6 +6,7 @@ import HookForm from './components/form/form';
 import Header from './components/Header/Header';
 import Card from './components/Card/Card';
 import Gallery from './components/Gallery/Gallery';
+import Home from './components/Home/Home'
 import { connect } from 'react-redux'
 import {
   Switch,
@@ -15,6 +16,7 @@ import {
 
 
 import {toggleClick} from './actions/actions'
+import Calendar from './components/Calendar/Calendar';
 
 const mapStateToProps = state => {
   return {
@@ -31,7 +33,9 @@ function App(props) {
         <div className='max-width'>
         {/* <Card imageName='joshua-ness-Vo52cKzOxMY-unsplash.jpg'/> */}
         <Route exact path='/gallery' component={Gallery}/>
-        <Route exact path='/' component={Card}/>
+        <Route exact path='/' component={Home}/>
+        <Route exact path='/schedule' component={Calendar}/>
+
         {/* <Route exact path='/schedule' component={}/>  schedule will go herew*/}
 
 

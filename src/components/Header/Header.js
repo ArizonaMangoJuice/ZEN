@@ -11,10 +11,12 @@ export default class Header extends React.Component{
                 alignItems='center'
                 bg='white'
             >
-                <Image 
-                    src={require('../../assets/isa-zen-small.png')}
-                    size='75px'
-                />
+                <Link to='/'>
+                    <Image 
+                        src={require('../../assets/isa-zen-small.png')}
+                        size='75px'
+                    />
+                </Link>
                 <nav>
                     <Button borderColor='#000' variant='ghost' marginRight='10px'>
                         <Link to='/gallery'>Gallery</Link>
@@ -23,7 +25,7 @@ export default class Header extends React.Component{
                         Contact
                     </Button>
                     <Button borderColor='#000' variant='ghost' marginRight='10px'>
-                        Schedule
+                        <Link to='/schedule'>Schedule</Link>
                     </Button>
                 </nav>
 
