@@ -7,7 +7,15 @@ export default class Calendar extends React.Component{
         let months = date.getMonth() + 1;
         let year = date.getFullYear(); 
         let daysInMonth = new Date(year, months, 0).getDate();
-        return daysInMonth
+        return daysInMonth;
+    }
+
+    lastMonthDays(){
+        let date = new Date();
+        let months = date.getMonth();
+        let year = date.getFullYear(); 
+        let daysInMonth = new Date(year, months, 0).getDate();
+        return daysInMonth;
     }
 
     getDayName(){
@@ -30,16 +38,23 @@ export default class Calendar extends React.Component{
 
     }
 
+
     createCalendarDay(){
         let daysinMonth = this.daysinMonth();
         let output = [];
         let firstDay = this.getfirstDayNameOfMonth();
+        let lastMonthDays = this.lastMonthDays();
+
+        
 
         for(let i = 0; i < firstDay[0]; i++){
             output.push(
-                <CalendarDay dayNumber='x' key={i} notDay={true}/>
+                <CalendarDay dayNumber={lastMonthDays} key={lastMonthDays} notDay={true}/>
             );
+            lastMonthDays = lastMonthDays - 1;
         }
+
+        output = output.reverse();
 
         for(let i = 1; i <= daysinMonth ; i++){
             output.push(
@@ -50,7 +65,7 @@ export default class Calendar extends React.Component{
         while(output.length < 35){
             let newDate = 1;
             output.push(
-                <CalendarDay dayNumber={newDate} key={newDate + 1}/>
+                <CalendarDay dayNumber={newDate} key={newDate + 1} notDay={true}/>
             );
         }
 
