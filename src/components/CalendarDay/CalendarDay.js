@@ -2,10 +2,10 @@ import React from 'react'
 
 // Switch from using class to hook functional components
 
-export default class CalendarDay extends React.Component{
-    render(){
+export default function CalendarDay(props){
         return (
-            <p>Calendar day</p>
+            <div className={props.notDay ? 'not-day day' : 'day'}>
+                <p className='day-number'>{props.dayNumber}</p>
+            </div>
         )
-    }
 }
