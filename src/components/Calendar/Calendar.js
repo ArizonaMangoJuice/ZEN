@@ -49,7 +49,7 @@ export default class Calendar extends React.Component{
 
         for(let i = 0; i < firstDay[0]; i++){
             output.push(
-                <CalendarDay dayNumber={lastMonthDays} key={lastMonthDays} notDay={true}/>
+                <CalendarDay dayNumber={lastMonthDays} key={`last Month${lastMonthDays}`} notDay={true}/>
             );
             lastMonthDays = lastMonthDays - 1;
         }
@@ -65,7 +65,7 @@ export default class Calendar extends React.Component{
         while(output.length < 35){
             let newDate = 1;
             output.push(
-                <CalendarDay dayNumber={newDate} key={newDate + 1} notDay={true}/>
+                <CalendarDay dayNumber={newDate} key={`next Month${newDate}`} notDay={true}/>
             );
         }
 
