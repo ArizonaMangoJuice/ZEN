@@ -58,12 +58,25 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
+.day-name-container{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.day-name{
+  height: 45px;
+  /* border: 1px solid red; */
+  width: 25%;
+}
+
 /* calendar day */
 
 .day{
-  max-width: 14.28%;
-  border: 1px solid #E2E8F0;
+  width: 14.28%;
+  border: .5px solid #E2E8F0;
   height: 91px;
+  margin: 0;
 }
 
 .day-number{
@@ -71,6 +84,25 @@
   padding-right: 10%;
   padding-top: 5%;
   color: #282c34;
+}
+
+.not-day{
+  background: repeating-linear-gradient(
+  -45deg,
+  #F9F9FA,
+  #F9F9FA 10px,
+  #fff 10px,
+  #fff 20px
+  );
+}
+
+.days-section{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 460px;
+  border-radius: 11px;
+
 }
 
 @keyframes App-logo-spin {

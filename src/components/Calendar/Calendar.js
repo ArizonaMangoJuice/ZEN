@@ -37,7 +37,7 @@ export default class Calendar extends React.Component{
 
         for(let i = 0; i < firstDay[0]; i++){
             output.push(
-                <CalendarDay dayNumber='x' key={i}/>
+                <CalendarDay dayNumber='x' key={i} notDay={true}/>
             );
         }
 
