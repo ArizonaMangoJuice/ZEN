@@ -14,12 +14,16 @@ export default class ZenCard extends React.Component{
                 </div>
                 <div className='zen-buttons'>
                     <Button 
+                        color='#E84044'
                         rightIcon="arrow-back"
                         paddingLeft='0'
+                        backgroundColor='white'
                     ></Button>
                     <Button
+                        color='#E84044'
                         rightIcon="arrow-forward"
                         paddingLeft='0'
+                        backgroundColor='white'
                     ></Button>
                 </div>
             </div>
