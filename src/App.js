@@ -17,6 +17,7 @@ import {
 
 import {toggleClick} from './actions/actions'
 import Calendar from './components/Calendar/Calendar';
+import LandingPage from './components/LandingPage/LandingPage';
 
 const mapStateToProps = state => {
   return {
@@ -33,7 +34,7 @@ function App(props) {
         <div className='max-width'>
         {/* <Card imageName='joshua-ness-Vo52cKzOxMY-unsplash.jpg'/> */}
         <Route exact path='/gallery' component={Gallery}/>
-        <Route exact path='/' component={Home}/>
+        <Route exact path='/' component={LandingPage}/>
         <Route exact path='/schedule' component={Calendar}/>
 
         {/* <Route exact path='/schedule' component={}/>  schedule will go herew*/}

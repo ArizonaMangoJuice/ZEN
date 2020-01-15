@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 .App {
   text-align: center;
 }
@@ -110,6 +112,57 @@
   /* height: 460px; */
   border-radius: 11px;
 
+}
+
+/* zen card */
+
+.zen-container{
+  position: relative;
+  max-width: 900px;
+  /* border: 1px solid red; */
+  height: 600px;
+}
+
+.zen-quote{
+  box-sizing: border-box;
+  position: absolute;
+  top: 33%;
+  left: 0;
+  bottom: 33%;
+  height: 180px;
+  width: 250px;
+  /* border: 1px solid red; */
+  background-color: white;
+  z-index: 1;
+  font-size: 42px;
+}
+
+.quote{
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-decoration: underline #E84044;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.photo-text{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 83%;
+}
+
+.zen-buttons{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.zen-info{
+  text-align: left;
+  margin-top: 20px;
+  font-family: 'Roboto';
+  width: 80%;
 }
 
 @keyframes App-logo-spin {
