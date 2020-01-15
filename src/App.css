@@ -58,6 +58,10 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
+.month{
+  font-weight: bold;
+}
+
 .day-name-container{
   display: flex;
   flex-flow: row;

@@ -80,7 +80,7 @@ export default class Calendar extends React.Component{
         return (
             <>
                 <div className='calendar-container'>
-                    <div className='month'>
+                    <div className='month-container'>
                         <p className ='month'> January </p>
                         <p className='year'> 2020 </p>
                     </div>
